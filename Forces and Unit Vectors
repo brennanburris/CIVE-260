@@ -1,6 +1,0 @@
-This is a script I wrote to find the unit vector between two points. If you want to find the force along that unit vector, there is also an option to add in a force and it will
-output the force along the unit vector.
-
-To use this code, type unit(point one, point two). You will be asked if you already have the vector or if you have two points. If you have the vector, the unit vector will be 
-created. If only the points are known, the code will output the unit vector after determining the distance between the points. You will then be asked for the force. At that 
-point, type in your force. For example, if you have a force magnitude of 12N, simply input "12" and press enter. The force in component form will be output. 

@@ -1,29 +1,29 @@
-function[UnitV] = unit(A,B,C,D,E) %input these as different rows
+function[UnitV] = unit(A,B,C,D,E) %input these as different vars
 if nargin == 5
     Vector = E-D-C-B-A;
+    answer = 1;
 elseif nargin == 4
     E = [0,0,0];
     Vector = D-C-B-A;
+    answer = 1;
 elseif nargin == 3
     E = [0, 0, 0];
     D = [0, 0, 0];
     Vector = C-B-A;
+    answer = 1;
 elseif nargin == 2
     E = [0, 0, 0];
     D = [0, 0, 0];
     C = [0, 0, 0];
     Vector = B-A;
+    answer = 1;
 elseif nargin == 1
     E = [0, 0, 0];
     D = [0, 0, 0];
     C = [0, 0, 0];
     B = [0, 0, 0];
+    answer = 0;
 end
-
-prompt='Are these points, or do you already have the vector? 1 for points,0 for one vector'; %this might be fucked sorry lol
-
-answer = input(prompt);
-
 
 if answer == 0;
     UnitV = A/(norm(A));
@@ -37,7 +37,7 @@ elseif answer == 1;
 
 end
 
-prompt = 'Would you like to multiply by a force? 0 for no, any n for force'
+prompt = 'Would you like to multiply by a force? 0 for no, any # for force'
 answer = input(prompt);
 
 if answer == 0
